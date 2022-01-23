@@ -19,7 +19,7 @@ void	rev_rotate_ab(t_list **a, t_list **b, int flag)
 		write(1, "rrr\n", 4);
 }
 
-void	go_all_to_B(t_list **a, t_list **b, int *array, int size)
+void	go_all_to_b(t_list **a, t_list **b, int *array, int size)
 {
 	int	i;
 

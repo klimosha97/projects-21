@@ -19,10 +19,10 @@ typedef struct s_list
 	long long		content;
 	struct s_list	*next;
 	struct s_list	*prev;
-	int				s_Br;
-	int				s_Brr;
-	int				s_Ar;
-	int				s_Arr;
+	int				s_br;
+	int				s_brr;
+	int				s_ar;
+	int				s_arr;
 	int				all_score;
 }				t_list;
 int			ft_isalpha(int ch);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pushswap.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcorneli <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/23 15:05:47 by mcorneli          #+#    #+#             */
+/*   Updated: 2022/01/23 15:05:55 by mcorneli         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSHSWAP_H
 # define PUSHSWAP_H
 
@@ -25,12 +37,12 @@ void	main_sort(t_list **a, t_list **b, int *array, int agc);
 void	triple_check(t_list **a);
 void	make_allscore(t_list *b);
 void	make_decision(t_list **a, t_list **b, t_list *elem);
-void	go_all_to_B(t_list **a, t_list **b, int *array, int size);
+void	go_all_to_b(t_list **a, t_list **b, int *array, int size);
 void	make_final_sort(t_list **a, int min, int len);
 void	sort3to5(t_list **a, t_list **b, int agc);
 void	triple_sort(t_list **a);
 int		get_next_line(char **line);
-void	ft_write_ERROR(void);
+void	ft_write_error(void);
 void	make_rr(t_list **a, t_list **b, t_list *elem);
 void	make_rr_pa(t_list **a, t_list **b, t_list *elem);
 void	ft_clean_all(t_list **a, t_list **b, int **array);

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "pushswap.h"
 
-int	score_Brr(t_list *b)
+int	score_brr(t_list *b)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int	score_Brr(t_list *b)
 	return (i + 1);
 }
 
-int	score_Ar(t_list **a, long long b)
+int	score_ar(t_list **a, long long b)
 {
 	t_list	*p_start;
 	t_list	*p_fin;
@@ -48,7 +48,7 @@ int	score_Ar(t_list **a, long long b)
 	return (i);
 }
 
-int	score_Arr(t_list **a, long long b)
+int	score_arr(t_list **a, long long b)
 {
 	t_list	*p_start;
 	t_list	*p_fin;
@@ -80,10 +80,10 @@ t_list	*scoring_steps(t_list **a, t_list **b)
 	while (pb != NULL)
 	{
 		i++;
-		pb->s_Br = i;
-		pb->s_Ar = score_Ar(a, pb->content);
-		pb->s_Arr = score_Arr(a, pb->content);
-		pb->s_Brr = score_Brr(pb);
+		pb->s_br = i;
+		pb->s_ar = score_ar(a, pb->content);
+		pb->s_arr = score_arr(a, pb->content);
+		pb->s_brr = score_brr(pb);
 		make_allscore(pb);
 		if (pb->all_score < min->all_score)
 			min = pb;
@@ -103,7 +103,7 @@ void	main_sort(t_list **a, t_list **b, int *array, int agc)
 		return ;
 	}
 	q_sort(array, 0, agc - 1);
-	go_all_to_B(a, b, array, agc);
+	go_all_to_b(a, b, array, agc);
 	triple_check(a);
 	while (*b)
 		make_decision(a, b, scoring_steps(a, b));

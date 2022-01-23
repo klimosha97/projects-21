@@ -52,7 +52,7 @@ int	get_next_line(char **line)
 	return (c == '\n');
 }
 
-void	ft_write_ERROR(void)
+void	ft_write_error(void)
 {
 	write(1, "Error\n", 6);
 	exit(1);

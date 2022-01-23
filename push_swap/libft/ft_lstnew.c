@@ -21,10 +21,10 @@ t_list	*ft_lstnew(long long content)
 	new->content = content;
 	new->next = NULL;
 	new->prev = NULL;
-	new->s_Ar = -1;
-	new->s_Arr = -1;
-	new->s_Br = -1;
-	new->s_Brr = -1;
+	new->s_ar = -1;
+	new->s_arr = -1;
+	new->s_br = -1;
+	new->s_brr = -1;
 	new->all_score = -1;
 	return (new);
 }

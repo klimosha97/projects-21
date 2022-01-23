@@ -62,7 +62,7 @@ void	do_instruct(t_list **a, t_list **b, char *line)
 	else if (ft_strncmp(line, "rr", 2) == 0)
 		rotate_ab(a, b, 0);
 	else
-		ft_write_ERROR();
+		ft_write_error();
 }
 
 void	ft_read_instructions(t_list **a, t_list **b)
